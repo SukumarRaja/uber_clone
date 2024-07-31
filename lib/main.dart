@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
+import 'package:uber/common/view/authScreens/loginScreen.dart';
 import 'package:uber/rider/controller/bottomNavRider/bottomNavBarProvider.dart';
 import 'package:uber/rider/view/account_screen.dart';
 import 'package:uber/rider/view/bottomnav/bottomNavBar.dart';
@@ -32,7 +33,8 @@ class _MyAppState extends State<MyApp> {
             theme: ThemeData(
               appBarTheme: AppBarTheme(color: white, elevation: 0),
             ),
-            home: const BottomNavBarRider(),
+            // home: const BottomNavBarRider(),
+            home: const LoginScreen(),
           ),
         );
       },
